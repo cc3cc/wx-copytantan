@@ -1,0 +1,8 @@
+<view >
+   <image style="position:absolute;z-index:-1;height: 100vh; width: 100vw;" mode='scaleToFill' src='{{img2}}'></image> 
+  <movable-area wx:if="{{hiddenimg}}" style="height: 160vh; width: 260vw; background: transparent;left:-80vw;top:-30vh;">
+    <movable-view style="height: 100vh; width: 100vw;background: transparent;left:80vw;top:30vh" x="{{x}}" y="{{y}}" direction="all" bindchange="moveimg" animation="false">
+    <image bindtouchend="touchendimg" bindtouchcancel='touchendimg'  style="width:100%;height:100%;" mode='scaleToFill' src='{{img1}}'></image>
+    </movable-view>
+  </movable-area>
+</view>
